@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LaravelTestGenerator:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LaravelTestGenerator_jar</output-path>
+    <root id="archive" name="LaravelTestGenerator.jar">
+      <element id="module-output" name="LaravelTestGenerator" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/NEW JAVA/json-simple-1.1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,31 @@
+{
+  "Model" : [{
+    "modelName" : "articles",
+    "modelNameSingular" : "article",
+    "databaseNames" : ["articles", "nutrition"],
+    "controllerName": "ArticlesController",
+    "routeUriName" : "food"
+  }],
+  "Rules" : [
+    {
+      "field" : "name",
+      "from" : "articles",
+      "validations" : ["required","string", "min:0", "max:20", "regex:/^[a-zA-ZáéíóúñÑ\\s]+$/", "exists:users,name"]
+    },
+    {
+      "field" : "budget",
+      "from" : "articles",
+      "validations" : ["required","numeric", "min:0", "max:10000"]
+    },
+    {
+      "field" : "purched",
+      "from" : "articles",
+      "validations" : ["nullable","boolean"]
+    },
+    {
+      "field" : "skills",
+      "from" : "nutrition",
+      "validations" : ["array"]
+    }
+  ]
+}
